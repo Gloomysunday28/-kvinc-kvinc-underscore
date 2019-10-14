@@ -12,6 +12,35 @@
   import MUnderScore from '@kvinc/kvinc-underscore'
 ```
 
+## 使用
+### 面向对象调用
+```javascript
+  MUnderScore.curry(arg1, arg2, ....)
+```
+
+### 函数式编程
+```javascript
+  MUnderScore(arg1).curry(arg2, ....)
+```
+
+### 链式调用
+```javascript
+  MUnderScore.memorize(fn).partial(fn, arg1, arg2) ....
+```
+
+## 以下是两种不同风格的调用
+```javascript
+  // 函数式风格
+  _.each([1, 2, 3], function(item){
+      console.log(item)
+  });
+
+  // 面向对象风格
+  _([1, 2, 3]).each(function(item){
+      console.log(item)
+  });
+```
+
 ## API
 函数名 | 函数参数 | 函数说明
 :---: | :---: | :---: |
